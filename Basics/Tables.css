@@ -1,0 +1,229 @@
+/* 
+
+                All Style Tables    
+
+*/
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ border-collapse ]
+
+     border-collapse : 
+
+        collapse        - الخلايا المجاورة لها حدود مشتركة (نموذج عرض جدول الحدود المطوية)
+        separate        - الخلايا المجاورة لها حدود مميزة (نموذج عرض جدول الحدود المنفصلة)
+
+    #  Global values #
+        inherit
+        initial
+        unset
+
+       Examples : 
+
+*/
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+                        [ width and height ]
+
+     width and height 
+
+       Examples : 
+
+*/
+table {
+    width: 100%;
+}
+  
+th {
+    height: 70px;
+}
+
+table {
+    width: 50%;
+}
+  
+th {
+    height: 70px;
+}
+
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+                        [ text-align ]
+
+        text-align
+
+       Examples : 
+
+*/
+
+td {
+    text-align: center;
+  }
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+               [ vertical-align ]
+
+    vertical-align : 
+
+
+       Examples : 
+
+*/
+
+td {
+    height: 50px;
+    vertical-align: bottom;
+  }
+
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+                        [ padding  ]
+
+       padding : 
+
+
+                
+
+       Examples : 
+
+*/
+
+th, td {
+    padding: 15px;
+    text-align: left;
+  }
+
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+                        [ border-bottom  ]
+
+       border-bottom : 
+
+
+                
+
+       Examples : 
+
+*/
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+                        [ :hover  ]
+
+      :hover : 
+      
+
+       Examples : 
+
+*/
+
+tr:hover {background-color: #f5f5f5;}
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+                        [ :hover  ]
+
+      :hover : 
+      
+
+       Examples : 
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* [ =========================================================================================== ] */
+/*                                        [ Tables  ]                                               */
+/* [ =========================================================================================== ] */
+
+
+
+[ Ar ]
+
+border	                    - يضبط كل خصائص الحدود في إعلان واحد
+border-collapse	            - يحدد ما إذا كان يجب طي حدود الجدول أم لا
+border-spacing	            - يحدد المسافة بين حدود الخلايا المجاورة
+caption-side	            - يحدد موضع التسمية التوضيحية للجدول
+empty-cells	                - يحدد ما إذا كان سيتم عرض الحدود والخلفية على خلايا فارغة في جدول أم لا
+table-layout	            - يضبط خوارزمية التخطيط التي سيتم استخدامها للجدول
+
+
+[ En ]
+
+border	                    - Sets all the border properties in one declaration
+border-collapse	            - Specifies whether or not table borders should be collapsed
+border-spacing	            - Specifies the distance between the borders of adjacent cells
+caption-side	            - Specifies the placement of a table caption
+empty-cells	                - Specifies whether or not to display borders and background on empty cells in a table
+table-layout	            - Sets the layout algorithm to be used for a table

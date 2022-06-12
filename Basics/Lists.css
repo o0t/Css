@@ -1,0 +1,251 @@
+/* 
+
+                All Style Lists    
+
+*/
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ List ]
+
+                                            :    هناك نوعان رئيسيان من القوائم
+
+    [ <ul> ]                   ->   القوائم غير المرتبة - يتم تمييز عناصر القائمة بالرموز النقطية
+
+    [ <ol> ]                   ->   القوائم المرتبة - يتم تمييز عناصر القائمة بأرقام أو أحرف
+
+
+       Examples : 
+
+*/
+
+
+
+
+
+
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+            [ list-style-type ]   => تحدد خاصية نوع نمط القائمة نوع علامة عنصر القائمة
+
+    
+
+
+
+[ Ar ]
+
+disc	                - القيمة الافتراضية العلامة عبارة عن دائرة مملوءة	
+armenian	            - العلامة هي الترقيم الأرميني التقليدي
+circle	                - العلامة عبارة عن دائرة	
+cjk-ideographic	        - العلامة هي أرقام إيديوغرامية بسيطة
+decimal	T               - هو علامة رقم	
+decimal-leading-zero	- العلامة عبارة عن رقم به أصفار بادئة (01 ، 02 ، 03 ، إلخ.)	
+georgian	            - العلامة هي الترقيم الجورجي التقليدي	
+hebrew	                - العلامة هي ترقيم عبري تقليدي	
+hiragana	            - العلامة هي ترقيم هيراغانا التقليدي	
+hiragana-iroha	        - العلامة هي ترقيم Hiragana iroha التقليدي	
+katakana	            - العلامة هي ترقيم الكاتاكانا التقليدي	
+katakana-iroha	        - العلامة هي ترقيم كاتاكانا إيروها التقليدي	
+lower-alpha	            - العلامة هي أقل من ألفا (أ ، ب ، ج ، د ، هـ ، إلخ.)
+lower-greek	            - العلامة هي اليونانية السفلى	
+lower-latin	            - العلامة لاتينية منخفضة (أ ، ب ، ج ، د ، هـ ، إلخ.)
+lower-roman	            - العلامة أقل رومانية (i ، ii ، iii ، iv ، v ، إلخ.)	
+none	                - لا توجد علامة معروضة	
+square	                - العلامة عبارة عن مربع	
+upper-alpha	            - العلامة هي أعلى ألفا (A ، B ، C ، D ، E ، إلخ.) 	
+upper-greek	            - العلامة هي اليونانية العليا
+upper-latin	            - العلامة لاتينية عليا (A ، B ، C ، D ، E ، إلخ.)	
+upper-roman	            - العلامة هي حرف روماني علوي (I ، II ، III ، IV ، V ، إلخ.)	
+initial	                - يعيّن هذه الخاصية إلى قيمتها الافتراضية	
+inherit                 - يرث هذه الخاصية من عنصرها الأصلي
+
+
+
+
+
+
+
+ [ En ]           
+
+disc	                Default value. The marker is a filled circle	
+armenian	            The marker is traditional Armenian numbering	
+circle	                The marker is a circle	
+cjk-ideographic	        The marker is plain ideographic numbers	
+decimal	T               he marker is a number	
+decimal-leading-zero	The marker is a number with leading zeros (01, 02, 03, etc.)	
+georgian	            The marker is traditional Georgian numbering	
+hebrew	                The marker is traditional Hebrew numbering	
+hiragana	            The marker is traditional Hiragana numbering	
+hiragana-iroha	        The marker is traditional Hiragana iroha numbering	
+katakana	            The marker is traditional Katakana numbering	
+katakana-iroha	        The marker is traditional Katakana iroha numbering	
+lower-alpha	            The marker is lower-alpha (a, b, c, d, e, etc.)	
+lower-greek	            The marker is lower-greek	
+lower-latin	            The marker is lower-latin (a, b, c, d, e, etc.)	
+lower-roman	            The marker is lower-roman (i, ii, iii, iv, v, etc.)	
+none	                No marker is shown	
+square	                The marker is a square	
+upper-alpha	            The marker is upper-alpha (A, B, C, D, E, etc.) 	
+upper-greek	            The marker is upper-greek	
+upper-latin	            The marker is upper-latin (A, B, C, D, E, etc.)	
+upper-roman	            The marker is upper-roman (I, II, III, IV, V, etc.)	
+initial	                Sets this property to its default value. Read about initial	
+inherit                 Inherits this property from its parent element. Read about inherit
+
+
+
+    Examples : 
+
+*/
+
+
+
+ul.a {
+    list-style-type: circle;
+  }
+  
+  ul.b {
+    list-style-type: square;
+  }
+  
+  ol.c {
+    list-style-type: upper-roman;
+  }
+  
+  ol.d {
+    list-style-type: lower-alpha;
+  }
+
+
+
+
+
+  ul.a {list-style-type: circle;}
+  ul.b {list-style-type: disc;}
+  ul.c {list-style-type: square;}
+  
+  ol.d {list-style-type: armenian;}
+  ol.e {list-style-type: cjk-ideographic;}
+  ol.f {list-style-type: decimal;}
+  ol.g {list-style-type: decimal-leading-zero;}
+  ol.h {list-style-type: georgian;}
+  ol.i {list-style-type: hebrew;}
+  ol.j {list-style-type: hiragana;}
+  ol.k {list-style-type: hiragana-iroha;}
+  ol.l {list-style-type: katakana;}
+  ol.m {list-style-type: katakana-iroha;}
+  ol.n {list-style-type: lower-alpha;}
+  ol.o {list-style-type: lower-greek;}
+  ol.p {list-style-type: lower-latin;}
+  ol.q {list-style-type: lower-roman;}
+  ol.r {list-style-type: upper-alpha;}
+  ol.s {list-style-type: upper-greek;}
+  ol.t {list-style-type: upper-latin;}
+  ol.u {list-style-type: upper-roman;}
+  ol.v {list-style-type: none;}
+  ol.w {list-style-type: inherit;}
+
+
+
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+            [ list-style-image ]   => حدد صورة كعلامة عنصر قائمة في قائمة
+
+    
+    Examples : 
+
+*/
+
+
+ul {
+    list-style-image: url('sqpurple.gif');
+  }
+
+
+
+
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+                        [ list-style-position ]   
+
+    
+ 
+
+    inside          العلامة :: هي العنصر الأول بين محتويات عنصر القائمة
+    outside         علامة :: خارج مربع الكتلة الرئيسية
+
+       Examples : 
+*/
+
+
+/* Keyword values */
+list-style-position: inside;
+list-style-position: outside;
+
+/* Global values */
+list-style-position: inherit;
+list-style-position: initial;
+list-style-position: unset
+
+
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+                        [ list-style ]   
+
+
+    list-style-image
+    list-style-position
+    list-style-type
+
+
+    Examples : 
+
+ 
+
+*/
+
+
+/* type */
+list-style: square;
+
+/* image */
+list-style: url('../img/shape.png');
+
+/* position */
+list-style: inside;
+
+/* type | position */
+list-style: georgian inside;
+
+/* type | image | position */
+list-style: lower-roman url('../img/shape.png') outside;
+
+/* Keyword value */
+list-style: none;
+
+/* Global values */
+list-style: inherit;
+list-style: initial;
+list-style: unset;

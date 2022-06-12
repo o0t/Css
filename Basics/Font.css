@@ -1,0 +1,255 @@
+/* 
+
+                All Style Fonts   
+
+*/
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                                     [ Font ]
+
+        font-style
+        font-variant
+        font-weight
+        font-size/line-height
+        font-family
+
+     
+    Examples : 
+
+*/
+
+p {
+    font: 20px Arial, sans-serif;
+}
+
+
+
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ font-family  ]
+
+
+        Serif                           -  الخطوط لها حد صغير عند حواف كل حرف. إنهم يخلقون إحساسًا بالشكلية والأناقة
+        Sans-serif	                    - تحتوي الخطوط على خطوط نظيفة (لا توجد حدود صغيرة مرفقة) فهي تخلق مظهرًا حديثًا وبسيطًا
+        Monospace                       -  الخطوط - هنا جميع الحروف لها نفس العرض الثابت ، فهي تخلق مظهرًا ميكانيكيًا
+        Cursive                         - الخطوط تقلد خط اليد البشرية
+        Fantasy                         - الخطوط هي خطوط زخرفية / مرحة
+
+
+    Examples : 
+
+*/
+
+.p1 {
+    font-family: "Times New Roman", Times, serif;
+}
+  
+.p2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.p3 {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+        [ font-family || Fallback Fonts ]  == خطوط الويب الآمنة هي خطوط يتم تثبيتها عالميًا عبر جميع المستعرضات والأجهزة
+
+            
+            Arial (sans-serif)
+            Verdana (sans-serif)
+            Helvetica (sans-serif)
+            Tahoma (sans-serif)
+            Trebuchet MS (sans-serif)
+            Times New Roman (serif)
+            Georgia (serif)
+            Garamond (serif)
+            Courier New (monospace)
+            Brush Script MT (cursive)
+
+    Examples : 
+
+*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                            [ Font Style ]
+
+
+            normal      - يتم عرض النص بشكل طبيعي
+            italic      - يظهر النص بخط مائل
+            oblique     - النص "مائل" (المائل مشابه جدًا للخط المائل ، ولكنه أقل دعمًا)
+
+
+    Examples : 
+
+*/
+
+p.normal {
+    font-style: normal;
+}
+  
+p.italic {
+    font-style: italic;
+}
+  
+p.oblique {
+    font-style: oblique;
+}
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                            [ Font Weight ]
+
+
+           normal           - وزن الخط العادي. مثل 400
+           bold             - وزن الخط الغامق. مثل 700
+          lighter           - وزن خط نسبي واحد أخف من العنصر الأصلي. لاحظ أنه يتم أخذ أربعة أوزان فقط للخط في الاعتبار لحساب الوزن النسبي ، انظر قسم المعنى من الأوزان النسبية أدناه
+          bolder            - وزن خط نسبي أثقل من العنصر الأصلي. لاحظ أنه يتم أخذ أربعة أوزان فقط للخط في الاعتبار لحساب الوزن النسبي ؛ انظر قسم معنى الأوزان النسبية أدناه
+
+    Examples : 
+
+*/
+
+/* Keyword values */
+font-weight: normal;
+font-weight: bold;
+
+/* Keyword values relative to the parent */
+font-weight: lighter;
+font-weight: bolder;
+
+/* Numeric keyword values */
+font-weight: 100;
+font-weight: 200;
+font-weight: 300;
+font-weight: 400;   // normal
+font-weight: 500;
+font-weight: 600;
+font-weight: 700;   // bold
+font-weight: 800;
+font-weight: 900;
+
+/* Global values */
+font-weight: inherit;
+font-weight: initial;
+font-weight: unset;
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                            [ Font Variant ]  == تحدد الخاصية font-variant ما إذا كان يجب عرض النص بخط أحرف صغيرة أم لا
+
+
+    Examples : 
+
+*/
+
+font-variant: small-caps;
+font-variant: common-ligatures small-caps;
+
+/* Global values */
+font-variant: inherit;
+font-variant: initial;
+font-variant: unset;
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                                [ Font Size ] 
+
+
+    Examples : 
+
+*/
+
+h1 {
+    font-size: 40px;
+}
+
+h1 {
+    font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+h1 {
+    font-size: 2.5em;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* [ =========================================================================================== ] */
+/*                                        [ Font  ]                                               */
+/* [ =========================================================================================== ] */
+
+
+
+[ Ar ]
+
+font	                - يضبط كل خصائص الخط في إعلان واحد
+font-family             - يحدد عائلة الخط للنص
+font-size	            - يحدد حجم خط النص
+font-style	            - يحدد نمط الخط للنص
+font-variant	        - يحدد ما إذا كان يجب عرض النص بخط أحرف صغيرة أم لا
+font-weight	            - يحدد سمك الخط
+
+[ En ]
+
+font	                - Sets all the font properties in one declaration
+font-family             - Specifies the font family for text
+font-size	            - Specifies the font size of text
+font-style	            - Specifies the font style for text
+font-variant	        - Specifies whether or not a text should be displayed in a small-caps font
+font-weight	            - Specifies the weight of a font

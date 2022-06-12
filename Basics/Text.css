@@ -1,0 +1,460 @@
+/* 
+
+                All Style Text   
+
+*/
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ Text  ]       ==>  بعض خصائص التحكم في النص 
+
+                 [   جميعهم يقبلون القيمه السالبه  ]
+
+    text-indent: 50px;              ==> يضع مسافه اولى بين النص                  
+
+    letter-spacing: 3px;            ==> يضع مسافه بين الحروف ويغير الخط 
+    
+    line-height: 0.8;               ==> يحدد ارتفاع النص 
+
+    word-spacing: 10px;             ==> يضع مسافه بين الكلمات 
+
+    white-space: nowrap;            ==> يقص النص ويحطهم تحت بعض 
+
+
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ Text Shadow ]
+
+    text-shadow :                [ يقبل القيمه السالبه لعكس الاتجاه ]
+
+     text-shadow: 2px 2px red;          Left and right , Up and down , color 
+
+
+    Examples : 
+
+*/
+p{
+    text-shadow: -50px 5px red;
+}
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ Text Color  ]
+
+    color   : 
+
+        a color name - like "red"
+        a HEX value - like "#ff0000"
+        an RGB value - like "rgb(255,0,0)"
+
+
+    Examples : 
+
+*/
+
+body {
+    color: blue;
+}
+  
+h1 {
+    color: green;
+}
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ Font Size ]
+
+    font-size   : 
+
+
+    Examples : 
+
+*/
+h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 2.5em; /* 40px/16=2.5em */
+  }
+  
+h4 {
+    font-size: 1.875em; /* 30px/16=1.875em */
+}
+  
+p {
+    font-size: 0.875em; /* 14px/16=0.875em */
+}
+
+body {
+    font-size: 100%;
+}
+  
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ text-align  ]
+
+    text-align   : 
+
+      
+        left                           - يتم محاذاة المحتويات المضمنة إلى الحافة اليسرى لمربع الخط
+        right                          - يتم محاذاة المحتويات المضمنة إلى الحافة اليمنى لمربع الخط
+        center                        - يتم توسيط المحتويات المضمنة داخل مربع الخط
+        justify                       - المحتويات المضمنة لها ما يبررها. يجب تباعد النص لمحاذاة حوافه اليسرى واليمنى مع الحواف اليمنى واليسرى من مربع السطر ، باستثناء السطر الأخير 
+        justify-all                   - مثل التبرير ، ولكنه يفرض أيضًا تبرير السطر الأخير
+        start                         - مثل اليسار إذا كان الاتجاه من اليسار إلى اليمين واليمين إذا كان الاتجاه من اليمين إلى اليسار
+        end                           - مثل اليمين إذا كان الاتجاه من اليسار إلى اليمين واليسار إذا كان الاتجاه من اليمين إلى اليسار 
+        match-parent                  - مشابه للوراثة ، ولكن يتم حساب قيم البداية والنهاية وفقًا لاتجاه الأصل ويتم استبدالها بالقيمة اليمنى أو اليسرى المناسبة
+
+
+    Examples : 
+
+*/
+
+h1 {
+    text-align: center;
+}
+  
+  h2 {
+    text-align: left;
+}
+  
+  h3 {
+    text-align: right;
+}
+
+div {
+    text-align: justify;
+}
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ text-transform  ]
+
+    text-transform : 
+
+        none	            - لا يوجد أحرف كبيرة. يتم عرض النص كما هو. هذا هو الافتراضي
+        capitalize	        - يحول الحرف الأول من كل كلمة إلى أحرف كبيرة	
+        uppercase	        - يحول كل الأحرف إلى أحرف كبيرة	
+        lowercase	        - يحول كل الأحرف إلى أحرف صغيرة	
+        initial	            - يعيّن هذه الخاصية إلى قيمتها الافتراضية. اقرأ عن الأولي	
+        inherit	            - يرث هذه الخاصية من عنصرها الاصلي
+
+    Examples : 
+
+*/
+
+div.a {
+    text-transform: uppercase;
+  }
+  
+  div.b {
+    text-transform: lowercase;
+  }
+  
+  div.c {
+    text-transform: capitalize;
+  }
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ direction  ]
+
+    direction : 
+
+        ltr
+        rtl
+        inherit
+        initial
+        unset
+
+    Examples : 
+
+*/
+
+p {
+    direction:rtl ;
+}
+
+p {
+    direction: ltr;
+}
+
+p { 
+    direction:inherit ;
+}
+
+p {
+    direction: initial;
+}
+
+p {
+    direction: unset;
+}
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ Text Decoration ]
+
+    text-decoration : 
+    
+            text-decoration-line (required)  التي  تُحدِّد نوع خطوط الزخرفة المستخدمة على النص
+            text-decoration-color            التي تُحدِّد لون خطوط الزخرفة المستخدمة على النص.
+            text-decoration-style            التي تُحدِّد شكل خطوط الزخرفة المستخدمة على النص
+
+
+            
+    
+
+            none	                 - القيمة الافتراضية. لا يحدد أي سطر لتزيين النص
+            underline	             - يحدد أنه سيتم عرض خط أسفل النص	
+            overline	             - يحدد أنه سيتم عرض خط فوق النص	
+            line-through	         - يحدد أنه سيتم عرض خط من خلال النص	
+            initial	Sets this        - الخاصية إلى قيمتها الافتراضية. اقرأ عن الأولي	
+            inherit	Inherits         - هذه الخاصية من عنصرها الأصلي.   
+
+    
+    Examples : 
+
+*/
+
+
+
+.under     { text-decoration: underline red; }
+.over      { text-decoration: wavy overline lime; }
+.line      { text-decoration: line-through; }
+.plain     { text-decoration: none; }
+.underover { text-decoration: dashed underline overline; }
+.blink     { text-decoration: blink; }
+
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [  text-decoration-line  ]
+
+    text-decoration-line : 
+    
+                       
+            none                                    - لا ينتج زخرفة نصية
+            underline                               - يحتوي كل سطر من النص على خط زخرفي تحته
+            overline                                - يحتوي كل سطر من النص على خط زخرفي فوقه
+            line-through                            - يحتوي كل سطر من النص على خط زخرفي يمر في منتصفه
+            blink                                   - يومض النص (يتناوب بين المرئي وغير المرئي). لا يجوز لوكلاء المستخدم المطابقين وميض النص. تم إهمال هذه القيمة لصالح الرسوم المتحركة CSS
+
+            underline overline                      -
+            overline underline line-through         -
+
+            inherit                                 - 
+            initial                                 -
+            unset                                   -
+    
+    Examples : 
+
+*/
+
+
+p {
+
+/* Single keyword */
+text-decoration-line: none;
+text-decoration-line: underline;
+text-decoration-line: overline;
+text-decoration-line: line-through;
+text-decoration-line: blink;
+
+/* Multiple keywords */
+text-decoration-line: underline overline;               /* Two decoration lines */
+text-decoration-line: overline underline line-through;  /* Multiple decoration lines */
+
+/* Global values */
+text-decoration-line: inherit;
+text-decoration-line: initial;
+text-decoration-line: unset;
+
+}
+
+
+
+/* All  */
+p {
+
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+ }
+
+
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+                        [ vertical-align  ]
+
+    vertical-align : 
+
+    baseline            – هذه هي القيمة الافتراضية
+    top                 – قم بمحاذاة الجزء العلوي من العنصر وتسلسله مع الجزء العلوي من السطر بأكمله
+    bottom              – قم بمحاذاة الجزء السفلي من العنصر وتسلسله مع الجزء السفلي من السطر بأكمله
+    middle              – يحاذي منتصف العنصر مع منتصف الأحرف الصغيرة في الأصل
+    text-top            – يحاذي الجزء العلوي من العنصر مع الجزء العلوي من خط العنصر الأصلي
+    text-bottom         – يحاذي الجزء السفلي من العنصر مع الجزء السفلي من خط العنصر الأصلي
+    sub                 – يحاذي الخط الأساسي للعنصر مع الخط الأساسي المنخفض للعنصر الأصل. مثل مكان جلوس <sub>
+    super               – يحاذي الخط الأساسي للعنصر مع الخط الأساسي المرتفع للعنصر الأصل. مثل مكان جلوس <sup>
+    length              – يحاذي الخط الأساسي للعنصر بالطول المحدد فوق الخط الأساسي للعنصر الأصل. (على سبيل المثال ، px ،٪ ، em ، rem ، إلخ.)
+    
+    
+    Examples : 
+
+*/
+
+img.top {
+    vertical-align: top;
+  }
+  
+img.middle {
+    vertical-align: middle;
+}
+  
+img.bottom {
+    vertical-align: bottom;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* [ =========================================================================================== ] */
+/*                                        [ Font ]                                               */
+/* [ =========================================================================================== ] */
+
+
+
+[ Ar ]
+
+font	                    - يضبط كل خصائص الخط في إعلان واحد
+font-family	                - يحدد نوع الخط للنص
+font-size	                - يحدد حجم خط النص
+font-style	                - يحدد نمط الخط للنص
+font-variant	            - يحدد ما إذا كان يجب عرض النص بخط أحرف صغيرة أم لا
+font-weight	                - يحدد سمك الخط
+
+[ En ]
+
+font	                    - Sets all the font properties in one declaration
+font-family	                - Specifies the font family for text
+font-size	                - Specifies the font size of text
+font-style	                - Specifies the font style for text
+font-variant	            - Specifies whether or not a text should be displayed in a small-caps font
+font-weight	                - Specifies the weight of a font
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* [ =========================================================================================== ] */
+/*                                [ All CSS Text Properties ]                                      */
+/* [ =========================================================================================== ] */
+
+
+
+[ Ar ]
+
+color	                             - يضبط لون النص
+direction	                         - يحدد اتجاه النص / اتجاه الكتابة
+letter-spacing	                     - يزيد أو ينقص المسافة بين الأحرف في النص
+line-height 	                     - يحدد ارتفاع الخط
+text-align	                         - يحدد المحاذاة الأفقية للنص
+text-decoration	                     - يحدد الزخرفة المضافة إلى النص
+text-indent	                         - يحدد المسافة البادئة للسطر الأول في كتلة نصية
+text-shadow	                         - يحدد تأثير الظل المضاف إلى النص
+text-transform	                     - يتحكم في الكتابة بالأحرف الكبيرة للنص
+text-overflow	                     - يحدد كيف يجب إرسال إشارة إلى المحتوى الذي تم تجاوزه ولا يتم عرضه
+unicode-bidi	                     - تُستخدم مع خاصية direction لتعيين أو إرجاع ما إذا كان يجب تجاوز النص لدعم لغات متعددة في نفس المستند
+vertical-align	                     - يضبط المحاذاة الرأسية للعنصر
+white-space	                         - يحدد كيفية معالجة المسافة البيضاء داخل عنصر
+word-spacing	                     - لزيادة أو تقليل المسافة بين الكلمات في النص
+
+
+[ En ]
+
+color	                             - Sets the color of text
+direction	                         - Specifies the text direction/writing direction
+letter-spacing	                     - Increases or decreases the space between characters in a text
+line-height 	                     - Sets the line height
+text-align	                         - Specifies the horizontal alignment of text
+text-decoration	                     - Specifies the decoration added to text
+text-indent	                         - Specifies the indentation of the first line in a text-block
+text-shadow	                         - Specifies the shadow effect added to text
+text-transform	                     - Controls the capitalization of text
+text-overflow	                     - Specifies how overflowed content that is not displayed should be signaled to the user
+unicode-bidi	                     - Used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document
+vertical-align	                     - Sets the vertical alignment of an element
+white-space	                         - Specifies how white-space inside an element is handled
+word-spacing	                     - Increases or decreases the space between words in a text

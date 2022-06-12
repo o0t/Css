@@ -1,0 +1,156 @@
+/*
+ 
+
+                All Style For position    
+
+*/
+
+/* [ =========================================================================================== ] */
+
+/* 
+                [  position   ] 
+
+    position : 
+ 
+
+    Examples :. 
+
+
+*/
+
+p {
+    position: static;
+}
+
+p {
+    position: relative;
+    top: 40px; left: 40px;
+}
+
+p {
+    position: absolute;
+    top: 40px; left: 40px;
+}
+
+p {
+    position: sticky;
+    top: 20px;
+}
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+                [  static   ] 
+
+    
+    position : static > 
+
+    [ Ar ] 
+
+يتم وضع العنصر وفقًا للتدفق العادي للمستند. لا يكون لخصائص الفهرس العلوي واليمين والسفلي واليسار والفهرس أي تأثير هذه هي القيمة الافتراضية
+
+    [ En ] 
+
+  The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value  
+    
+  
+  Examples :. 
+
+
+*/
+
+p {
+    position: static;
+}
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+                [  relative   ] 
+
+    
+    position : relative > 
+
+    [ Ar ] 
+
+    يتم وضع العنصر وفقًا للتدفق العادي للمستند ، ثم يتم إزاحته بالنسبة لنفسه بناءً على قيم أعلى ، ويمين ، وأسفل ، ويسار. لا يؤثر الإزاحة على موضع أي عناصر أخرى ؛ وبالتالي ، فإن المساحة المعطاة للعنصر في تخطيط الصفحة هي نفسها كما لو كان الموضع ثابتًا
+
+
+    [ En ] 
+
+    The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static
+    
+  
+  Examples :. 
+
+
+*/
+
+p {
+    position: relative;
+    top: 40px; 
+    left: 40px;
+}
+
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+                [  absolute   ] 
+
+    
+    position : absolute > 
+
+    [ Ar ] 
+
+    تتم إزالة العنصر من تدفق المستند العادي ، ولا يتم إنشاء مساحة للعنصر في تخطيط الصفحة. يتم وضعه بالنسبة إلى أقرب سلف له ، إن وجد ؛ خلاف ذلك ، يتم وضعه بالنسبة إلى الكتلة المحتوية الأولية. يتم تحديد موضعه النهائي من خلال قيم أعلى ، ويمين ، وأسفل ، ويسار
+
+    [ En ] 
+
+    The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left    
+  
+  Examples :. 
+
+
+*/
+
+p {
+    position: absolute;
+    top: 40px; 
+    left: 40px;
+}
+
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+                [  sticky   ] 
+
+    
+    position : sticky > 
+
+    [ Ar ] 
+
+    يتم وضع العنصر وفقًا للتدفق الطبيعي للمستند ، ثم يتم إزاحته بالنسبة إلى أقرب سلف تمرير يحتوي على كتلة (أقرب سلف على مستوى الكتلة) ، بما في ذلك العناصر المرتبطة بالجدول ، استنادًا إلى قيم أعلى ، يمين ، أسفل ، وغادر. لا يؤثر الإزاحة على موضع أي عناصر أخرى
+    
+    [ En ] 
+
+    The element is positioned according to the normal flow of the document, and then shifted relative to the closest scroll ancestor containing a block (the closest ancestor at the block level), including the table-related elements, based on the top, right, bottom, and left values. The offset does not affect the position of any other elements
+
+
+  Examples :. 
+
+
+*/
+
+p {
+    position: sticky;
+    top: 20px;
+}

@@ -1,0 +1,163 @@
+/* 
+
+                All Style Margin    
+
+*/
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ Margin ]
+
+    Margin : 
+
+    margin: 1px 2px 3px 4px;    1 is top , 2 is right , 3 is Down , 4 is left 
+
+    Accept negative value        =>     يقبل القيمه السالبه 
+
+    Examples : 
+
+*/
+p {
+    margin: -10px 0 0 0 ;     /* -10px is top */
+}
+p {
+    margin: 0 10px 0 0 ;     /* 10px is right */
+}
+
+p {
+    margin: 0 0 50px 0;    /* 10px is Down */
+}
+  
+p {
+    margin: 0 0 0 10px;   /* 10px is left */
+}
+p {
+    margin: 10px ;      /* All sides 10px  */
+}
+p {
+    margin: 10px 20px;   /*  10px is top and Down , 20px is right and  left      */
+}
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+                     [ Margin-top ]
+
+    Margin-top : 
+
+    margin-top: 10px ;
+
+    Examples : 
+
+*/
+
+p {
+    margin-top: 10px;
+}
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+                     [ Margin-bottom ]
+
+    Margin-bottom : 
+
+    margin-bottom: 10px ;
+
+    Examples : 
+
+*/
+
+p {
+    margin-bottom: 100px;
+}
+
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+                     [ Margin-right ]
+
+    Margin-right : 
+
+    margin-right: 10px ;
+
+    Examples : 
+
+*/
+p {
+    margin-right:10px ;
+}
+
+/* [ =========================================================================================== ] */
+
+
+/* 
+
+                     [ Margin-left ]
+
+    Margin-left : 
+
+    margin-left: 10px ;
+
+    Examples : 
+
+*/
+p {
+    margin-left: 10px ;
+}
+
+
+/* [ =========================================================================================== ] */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* [ =========================================================================================== ] */
+/*                                        [ Margin ]                                               */
+/* [ =========================================================================================== ] */
+
+[ Ar ]
+
+margin                  	خاصية الاختزال لتحديد خصائص الهامش في إعلان واحد
+margin-bottom	            يضبط الهامش السفلي للعنصر
+margin-left	                يضبط الهامش الأيسر للعنصر
+margin-right	            يضبط الهامش الأيمن للعنصر
+margin-top	                يضبط الهامش العلوي للعنصر
+
+[ En ]
+
+margin                  	A shorthand property for setting the margin properties in one declaration
+margin-bottom	            Sets the bottom margin of an element
+margin-left	                Sets the left margin of an element
+margin-right	            Sets the right margin of an element
+margin-top	                Sets the top margin of an element

@@ -1,0 +1,196 @@
+/*
+ 
+
+                All Style For Overflow   
+
+*/
+
+/* [ =========================================================================================== ] */
+
+/* 
+                [  Overflow  ] 
+
+
+    overflow :
+    overflow-x :
+    overflow-y :       
+
+
+
+
+
+
+
+
+    /* Keyword values */
+    overflow: visible;
+    overflow: hidden;
+    overflow: clip;
+    overflow: scroll;
+    overflow: auto;
+    overflow: hidden visible;
+
+    /* Global values */
+    overflow: inherit;
+    overflow: initial;
+    overflow: unset;    
+   
+
+
+
+    Examples :. 
+
+
+*/
+
+p {
+    overflow: visible;
+}
+
+p {
+    overflow: hidden;
+}
+
+p {
+    overflow: scroll;
+}
+
+p {
+    overflow: auto;
+}
+
+p {
+    overflow: clip;
+}
+
+/* [ =========================================================================================== ] */
+
+/* 
+                [  visible  ] 
+
+
+    overflow: visible
+
+    [ Ar ]
+
+     لا يتم قص المحتوى ويمكن عرضه خارج مربع المساحة المتروكة
+
+    [ En ] 
+
+    Content is not clipped and can be viewed outside the padding box.
+
+    Examples :. 
+
+
+*/
+
+p {
+    overflow: visible;
+}
+
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+                [  hidden  ] 
+
+
+    overflow: hidden
+
+    [ Ar ]
+
+     يتم قص المحتوى إذا لزم الأمر لملاءمة مربع الحشو ، ولا يتم توفير أشرطة تمرير ، ولا يُسمح بأي دعم للسماح للمستخدم بالتمرير (مثل السحب أو استخدام عجلة التمرير) يمكن تمرير المحتوى برمجيًا (على سبيل المثال ، عن طريق تعيين قيمة خاصية مثل offsetLeft) ، لذلك لا يزال العنصر عبارة عن حاوية تمرير
+
+    [ En ] 
+
+    Content is clipped if needed to fit the padding box, no scrollbars are provided, no support for allowing the user to scroll (eg dragging or using the scroll wheel) Content can scroll programmatically (eg, by setting a property value like offsetLeft), so The item is still a scroll container
+
+    Examples :. 
+
+
+*/
+
+p {
+    overflow: hidden;
+}
+
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+                [  scroll  ] 
+
+
+    overflow: scroll
+
+    [ Ar ]
+
+    يتم قص المحتوى إذا لزم الأمر ليناسب مربع الحشو. تعرض المستعرضات دائمًا أشرطة التمرير سواء تم قص أي محتوى أم لا ، مما يمنع ظهور أشرطة التمرير أو يختفي مع تغير المحتوى. قد تستمر الطابعات في طباعة محتوى فائض
+    [ En ] 
+
+    The content is clipped if necessary to fit the stuffing box. Browsers always display scroll bars whether or not any content has been clipped, preventing scroll bars from appearing or disappearing as the content changes. Printers may continue to print excess content
+
+    Examples :. 
+
+
+*/
+
+p {
+    overflow: scroll;
+}
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+                [  auto  ] 
+
+
+    overflow: auto
+
+    [ Ar ]
+
+    يعتمد على وكيل المستخدم. إذا كان المحتوى ملائمًا داخل مربع المساحة المتروكة ، فسيبدو كما هو مرئيًا ، ولكنه لا يزال ينشئ سياق تنسيق كتلة جديدًا. توفر مستعرضات سطح المكتب أشرطة تمرير إذا فاض المحتوى
+
+    [ En ] 
+
+    Depends on the user agent. If the content fits inside the padding box, it will look the same as it is visible, but still create a new block formatting context. Desktop browsers provide scroll bars if content overflows
+
+    Examples :. 
+
+
+*/
+
+p {
+    overflow: auto;
+}
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+                [  clip  ] 
+
+
+    overflow: clip
+
+    [ Ar ]
+
+    مثل المخفي ، يتم قطع المحتوى إلى مربع الحشو الخاص بالعنصر. يتمثل الاختلاف بين المقطع والمخفي في أن الكلمة الأساسية للمقطع تمنع أيضًا كل عمليات التمرير ، بما في ذلك التمرير الآلي. المربع ليس حاوية تمرير ، ولا يبدأ سياق تنسيق جديد. إذا كنت ترغب في بدء سياق تنسيق جديد ، يمكنك استخدام display: flow-root للقيام بذلك
+
+    [ En ] 
+
+    Like the hidden, the content is clipped to the element's padding box. The difference between clip and hidden is that the clip keyword also prevents all scrolling, including automated scrolling. The box is not a scroll container, and it does not start a new format context. If you want to start a new format context, you can use display: flow-root to do so
+            
+    Examples :. 
+
+
+*/
+
+p {
+    overflow: clip;
+}

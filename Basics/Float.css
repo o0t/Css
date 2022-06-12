@@ -1,0 +1,117 @@
+/*
+ 
+
+                All Style For Float    
+
+*/
+
+/* [ =========================================================================================== ] */
+
+/* 
+                [  Float  ] 
+
+        Float :      
+
+    left            - يطفو العنصر على يسار الحاوية الخاصة به
+    right           - يطفو العنصر على يمين الحاوية الخاصة به
+    none            - لا يطفو العنصر (سيتم عرضه فقط في مكان ظهوره في النص) هذا هو الإعداد الافتراضي
+    inherit         - يرث العنصر القيمة العائمة للعنصر الأصل
+    inline-start    - يجب أن يطفو العنصر على جانب البداية للكتلة التي تحتوي عليه أي الجانب الأيسر مع نصوص ltr ، والجانب الأيمن مع نصوص rtl
+    inline-end      - يجب أن يطفو العنصر على جانب نهاية الكتلة التي تحتوي عليه ، وهذا هو الجانب الأيمن مع نصوص ltr ، والجانب الأيسر مع نصوص rtl
+
+
+
+
+    /* Keyword values */
+    float: left;
+    float: right;
+    float: none;
+    float: inline-start;
+    float: inline-end;
+
+    /* Global values */
+    float: inherit;
+    float: initial;
+    float: unset;
+
+
+    Examples :. 
+
+*/
+
+img {
+    float: left;
+}
+
+img {
+    float: right;
+}
+
+img {
+    float: none;
+}
+
+img {
+    float: inherit;
+}
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+                [  clear  ] 
+
+        clear :      
+
+    none            - هي كلمة أساسية تشير إلى أن العنصر لا يتحرك لأسفل لمسح العناصر العائمة السابقة
+    left            - هي كلمة رئيسية تشير إلى أن العنصر قد تم نقله لأسفل لمسح العوامات اليسرى السابقة
+    right           - هي كلمة أساسية تشير إلى أن العنصر قد تم نقله لأسفل لمسح العوامات اليمنى السابقة
+    both            - هي كلمة رئيسية تشير إلى أن العنصر قد تم نقله لأسفل لمسح كل من العوامات اليسرى واليمنى
+
+
+    Examples :. 
+
+*/
+
+p {
+    clear: none;
+}
+
+p {
+    clear: left;
+}
+
+p {
+    clear: right;
+}
+
+p {
+    clear: both;
+}
+
+
+
+/* [ =========================================================================================== ] */
+/*                             [ box-sizing - clear - float - overflow  ]                          */
+/* [ =========================================================================================== ] */
+
+
+[ Ar ]
+
+box-sizing	            - يحدد كيفية حساب عرض وارتفاع عنصر: هل يجب أن يشتملوا على حشوة وحدود أم لا
+clear	                - يحدد العناصر التي يمكن أن تطفو بجانب العنصر الذي تم مسحه وعلى أي جانب
+float	                - يحدد كيف يجب أن يطفو العنصر
+overflow	            - يحدد ما يحدث إذا تجاوز المحتوى مربع عنصر
+overflow-x	            - يحدد ما يجب فعله بالحواف اليسرى / اليمنى للمحتوى إذا تجاوز مساحة محتوى العنصر
+overflow-y	            - يحدد ما يجب فعله بالحواف العلوية / السفلية للمحتوى إذا تجاوز مساحة محتوى العنصر
+
+
+[ En ]
+
+box-sizing	           - Defines how the width and height of an element are calculated: should they include padding and borders, or not
+clear	               - Specifies what elements can float beside the cleared element and on which side
+float	               - Specifies how an element should float
+overflow	           - Specifies what happens if content overflows an element's box
+overflow-x	           - Specifies what to do with the left/right edges of the content if it overflows the element's content area
+overflow-y	           - Specifies what to do with the top/bottom edges of the content if it overflows the element's content area

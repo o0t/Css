@@ -1,0 +1,229 @@
+/* 
+
+                All Style Outline  
+
+*/
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ Outline ]
+
+    Outline : 
+
+            outline-width
+            outline-style (required)
+            outline-color
+    
+
+    Examples : 
+
+*/
+
+p.ex1 {outline: dashed;}
+p.ex2 {outline: dotted red;}
+p.ex3 {outline: 5px solid yellow;}
+p.ex4 {outline: thick ridge pink;}
+
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ outline-style ]
+
+    outline-style : 
+
+        dotted                  - يحدد مخططًا منقطًا
+        dashed                - يحدد مخططًا متقطعًا
+        solid                 - يحدد مخططًا متينًا
+        double               - يحدد مخططًا مزدوجًا
+        groove               - يحدد مخططًا محززًا ثلاثي الأبعاد
+        ridge               - يحدد مخططًا ثلاثي الأبعاد ممدودًا
+        inset               - يحدد مخطط خارجي ثلاثي الأبعاد 
+        outset              - يحدد مخطط خارجي ثلاثي الأبعاد
+        none                - لا تحدد الخطوط العريضة
+        hidden              - يحدد مخططًا مخفيًا
+
+    Examples : 
+
+*/
+
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+
+
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ outline-width ]
+
+    outline-width : 
+
+            thin (typically 1px)                            - نحيف
+            medium (typically 3px)                          - متوسط
+            thick (typically 5px)                           - سميك
+            A specific size (in px, pt, cm, em, etc)        - حجم محدد
+
+    Examples : 
+
+*/
+p.ex1 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thin;
+  }
+  
+  p.ex2 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: medium;
+  }
+  
+  p.ex3 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thick;
+  }
+  
+  p.ex4 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: 4px;
+  }
+
+
+
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ outline-color ]
+
+    outline-color : 
+
+        name - specify a color name, like "red"
+        HEX - specify a hex value, like "#ff0000"
+        RGB - specify a RGB value, like "rgb(255,0,0)"
+        HSL - specify a HSL value, like "hsl(0, 100%, 50%)"
+        invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)
+
+    Examples : 
+
+*/
+
+p.ex1 {
+    border: 2px solid black;
+    outline-style: solid;
+    outline-color: red;
+  }
+  
+p.ex2 {
+    outline-style: solid;
+    outline-color: #ff0000; /* red */
+  }
+
+p.ex3 {
+    outline-style: solid;
+    outline-color: rgb(255, 0, 0); /* red */
+  }
+
+p.ex4 {
+    outline-style: solid;
+    outline-color: hsl(0, 100%, 50%); /* red */
+  }
+
+p.ex5 {
+    border: 1px solid yellow;
+    outline-style: solid;
+    outline-color: invert;  /* يستخدم المثال التالي لون المخطط التفصيلي: عكس ، والذي ينفذ انعكاس اللون. هذا يضمن أن المخطط التفصيلي مرئي ، بغض النظر عن لون الخلفية  */
+  }
+
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ Outline Offset ]
+
+    outline-offset : 
+
+        تضيف خاصية إزاحة المخطط التفصيلي مسافة بين مخطط تفصيلي وحافة / حد عنصر. المسافة بين العنصر ومخططه الخارجية شفافة.
+
+    Examples : 
+
+*/
+
+
+p {
+    margin: 30px;
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* [ =========================================================================================== ] */
+/*                                        [ Outline  ]                                               */
+/* [ =========================================================================================== ] */
+
+
+
+[ Ar ]
+
+outline	                       - خاصية اختصار لتحديد عرض المخطط التفصيلي ونمط المخطط التفصيلي ولون المخطط التفصيلي في إعلان واحد
+outline-color	              - يضبط لون المخطط التفصيلي
+outline-offset                - يحدد المسافة بين المخطط التفصيلي وحافة العنصر أو حده
+outline-style	              - يضبط نمط المخطط التفصيلي
+outline-width	             - يضبط عرض المخطط التفصيلي
+
+[ En ]
+
+outline	                       - A shorthand property for setting outline-width, outline-style, and outline-color in one declaration
+outline-color	              - Sets the color of an outline
+outline-offset                - Specifies the space between an outline and the edge or border of an element
+outline-style	              - Sets the style of an outline
+outline-width	             - Sets the width of an outline

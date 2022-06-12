@@ -1,0 +1,141 @@
+/*
+ 
+
+                All Style For Combinators   
+
+
+    descendant selector (space)
+    child selector (>)
+    adjacent sibling selector (+)
+    general sibling selector (~)
+
+*/
+
+/* [ =========================================================================================== ] */
+
+/* 
+                [  Child Selector (>)  and  Adjacent Sibling Selector (+)  ] 
+
+    Descendant Selector :      اللذي يكون بداخل الوسم 
+    
+                  
+    Examples :. 
+
+
+*/
+
+// HTML Page 
+
+<div>
+<p>This is P</p>
+This is Div 1
+<p>This is P</p>
+</div>
+
+
+// Css Page
+
+div p {
+    color: red;
+}
+
+
+
+/* ===================================== */
+
+
+
+// HTML Page 
+
+<div>
+<p>This is P</p>
+This is Div 1
+<p>This is P</p>
+</div>
+
+
+// Css Page
+
+div + p {
+    color: red;
+}
+
+
+
+  
+/* [ =========================================================================================== ] */
+
+/* 
+                [  General Sibling Selector (~)  ] 
+
+    Descendant Selector :      يتم التعديل على اللي بعد الوسم 
+    
+                  
+    Examples :. 
+
+
+*/
+
+
+// HTML Page 
+
+<div>
+This is Div 
+</div>
+
+<p>This is P</p>
+
+
+
+// Css Page
+
+div ~ p {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* [ =========================================================================================== ] */
+/*                                        [ (space) (>) (+) (~) ]                                  */
+/* [ =========================================================================================== ] */
+
+
+
+[ Ar ]
+
+element element	        div p	            - تحديد جميع عناصر <p> الموجودة داخل عناصر <div>
+element>element	        div > p	            - تحديد جميع عناصر <p> حيث يكون الأصل عنصرًا من نوع <div>
+element+element	        div + p	            - يحدد العنصر <p> الأول الذي يتم وضعه مباشرة بعد عناصر <div>
+element1~element2	    p ~ ul          	- تحديد كل عنصر من فئة <ul> مسبوقًا بعنصر <p>
+
+
+[ En ]
+
+element element	        div p	            - Selects all <p> elements inside <div> elements
+element>element	        div > p	            - Selects all <p> elements where the parent is a <div> element
+element+element	        div + p	            - Selects the first <p> element that are placed immediately after <div> elements
+element1~element2	    p ~ ul          	- Selects every <ul> element that are preceded by a <p> element
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

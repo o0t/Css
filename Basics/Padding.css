@@ -1,0 +1,149 @@
+/* 
+
+                All Style Padding  
+
+*/
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ Padding ]
+
+    Padding : 
+
+    Padding: 1px 2px 3px 4px;    1 is top , 2 is right , 3 is Down , 4 is left 
+
+    Examples : 
+
+*/
+
+p {
+    Padding: -10px 0 0 0 ;     /* -10px is top */
+}
+p {
+    Padding: 0 10px 0 0 ;     /* 10px is right */
+}
+
+p {
+    Padding: 0 0 50px 0;    /* 10px is Down */
+}
+  
+p {
+    Padding: 0 0 0 10px;   /* 10px is left */
+}
+p {
+    Padding: 10px ;      /* All sides 10px  */
+}
+p {
+    Padding: 10px 20px;   /*  10px is top and Down , 20px is right and  left      */
+}
+
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ padding-top ]
+
+    padding-top : 
+
+    padding-top: 10px ;
+
+    Examples : 
+
+*/
+
+p {
+    padding-top: 10px;
+}
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ padding-bottom ]
+
+    padding-bottom : 
+
+    padding-bottom: 10px ;
+
+    Examples : 
+
+*/
+
+p {
+    padding-bottom: 10px;
+}
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ padding-right ]
+
+    padding-right : 
+
+    padding-right: 10px ;
+
+    Examples : 
+
+*/
+
+p {
+    padding-right: 10px;
+}
+
+
+
+/* [ =========================================================================================== ] */
+
+/* 
+
+                        [ padding-left ]
+
+    padding-left : 
+
+    padding-left: 10px ;
+
+    Examples : 
+
+*/
+
+p {
+    padding-left: 10px ;
+}
+
+
+
+
+
+
+
+/* [ =========================================================================================== ] */
+/*                                        [ Padding ]                                               */
+/* [ =========================================================================================== ] */
+
+
+
+[ Ar ]
+
+padding             	خاصية الاختزال لتعيين جميع خصائص الحشو في إعلان واحد
+padding-bottom	        يضبط المساحة المتروكة السفلية لعنصر
+padding-left	        يضبط المساحة المتروكة اليسرى للعنصر
+padding-right	        يضبط المساحة المتروكة الصحيحة للعنصر
+padding-top	            يضبط المساحة المتروكة العلوية لعنصر
+
+[ En ]
+
+padding             	A shorthand property for setting all the padding properties in one declaration
+padding-bottom	        Sets the bottom padding of an element
+padding-left	        Sets the left padding of an element
+padding-right	        Sets the right padding of an element
+padding-top	            Sets the top padding of an element
